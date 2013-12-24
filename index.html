@@ -23,19 +23,23 @@
 			<h1>Gifts</h1>
 
 			<ul>
-				<!-- Loop through the gifts array, assigns a click handler, and sets or
+				<!-- Loops through the gifts array, assigns a click handler, and sets or
 					removes the "active" css class if needed -->
 				<li ng-repeat="gift in gifts" ng-click="toggleActive(gift)" ng-class="{active:gift.active}">
-					<!-- Notice the use of the currency filter, it will format the price -->
+					<!-- Currency filter added, $ will be affixed to price -->
 					{{gift.name}} <span>{{gift.price | currency}}</span>
 				</li>
 			</ul>
 
 			<div class="total">
-				<!-- Calculate the total price of all chosen services. Format it as currency. -->
+				<!-- Real-time calculation of total cost in $ using currency filter -->
 				Total: <span>{{total() | currency}}</span>
 			</div>
 
 		</form>
 
-		
+		<!-- Adds AngularJS from Google's CDN -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
