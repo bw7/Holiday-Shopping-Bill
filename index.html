@@ -15,19 +15,19 @@
 		<![endif]-->
 	</head>
 
-	<!-- Declare a new AngularJS app and associate the controller -->
-	<body ng-app ng-controller="OrderFormController">
+	<!-- Designates new AngularJS app and includes the controller -->
+	<body ng-app ng-controller="HolidayShoppingBillController">
 
 		<form>
 
-			<h1>Services</h1>
+			<h1>Gifts</h1>
 
 			<ul>
-				<!-- Loop through the services array, assign a click handler, and set or
-					remove the "active" css class if needed -->
-				<li ng-repeat="service in services" ng-click="toggleActive(service)" ng-class="{active:service.active}">
+				<!-- Loop through the gifts array, assigns a click handler, and sets or
+					removes the "active" css class if needed -->
+				<li ng-repeat="gift in gifts" ng-click="toggleActive(gift)" ng-class="{active:gift.active}">
 					<!-- Notice the use of the currency filter, it will format the price -->
-					{{service.name}} <span>{{service.price | currency}}</span>
+					{{gift.name}} <span>{{gift.price | currency}}</span>
 				</li>
 			</ul>
 
@@ -38,8 +38,4 @@
 
 		</form>
 
-		<!-- Include AngularJS from Google's CDN -->
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
-		<script src="script.js"></script>
-	</body>
-</html>
+		
