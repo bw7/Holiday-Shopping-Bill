@@ -58,4 +58,15 @@ function HolidayShoppingBillController($scope){
 
 		var total = 0;
 
-		
+		// Uses the AngularJS forEach helper method to
+		// loop through the gifts array:
+
+		angular.forEach($scope.gifts, function(s){
+			if (s.active){
+				total+= s.price;
+			}
+		});
+
+		return total;
+	};
+}
