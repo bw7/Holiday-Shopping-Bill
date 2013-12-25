@@ -54,4 +54,8 @@ function HolidayShoppingBillController($scope){
 
 	// Adds helper method for calculating total price
 
-	
+	$scope.total = function(){
+
+		var total = 0;
+
+		
