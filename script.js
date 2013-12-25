@@ -48,4 +48,10 @@ function HolidayShoppingBillController($scope){
 		}
 
 
+	$scope.toggleActive = function(s){
+		s.active = !s.active;
+	};
+
+	// Adds helper method for calculating total price
+
 	
