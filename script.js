@@ -22,30 +22,7 @@ function HolidayShoppingBillController($scope){
 			price: 15,
 			active:false
 		},{
-			name: 'Treadmill'
-		},{ price: 600
-			active:false
-		},{
-			name: 'Annual Gym Membership'
-			price: 150
-			active:false
-		},{
-			name: 'Sweater'
-			price: 25
-			active:false
-		},{
-			name: 'Gift Wrapping Paper'
-			price: 10
-			active:false
-		},{
-			name: 'Artificial Christmas Tree'
-			price: 75
-			active:false
-		},{
-			name: 'Christmas Lights'
-			price: 50
-			active:false
-		}
+		
 
 
 	$scope.toggleActive = function(s){
