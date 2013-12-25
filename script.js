@@ -10,18 +10,18 @@ function HolidayShoppingBillController($scope){
 			price: 99,
 			active:true
 		},{
-			name: 'LCD TV',
-			price: 350,
+			name: 'Artificial Christmas Tree',
+			price: 68.87,
 			active:false
 		},{
-			name: 'Boots',
-			price: 50,
+			name: 'Running Shoes',
+			price: 45.80,
 			active:false
 		},{
-			name: 'Gloves',
-			price: 15,
+			name: 'Treadmill',
+			price: 176.95,
 			active:false
-		}
+		}			
 	];
 
 	$scope.toggleActive = function(s){
