@@ -21,9 +21,8 @@ function HolidayShoppingBillController($scope){
 			name: 'Gloves',
 			price: 15,
 			active:false
-		},{
-		
-
+		}
+	];
 
 	$scope.toggleActive = function(s){
 		s.active = !s.active;
